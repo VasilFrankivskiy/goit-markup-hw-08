@@ -1,0 +1,31 @@
+.hero {
+  background-color: var(--dark-grey-bac);
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/bac/Img-bac-hero.jpg);
+  background-repeat: no-repeat;
+  max-width: 1600px;
+  text-align: center;
+
+  &__container {
+    padding: 200px 0;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  &__text {
+    font-family: "roboto";
+    font-size: 44px;
+    font-weight: 900;
+    color: var(--white-text);
+    text-transform: uppercase;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+  }
+}

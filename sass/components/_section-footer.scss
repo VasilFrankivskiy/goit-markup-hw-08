@@ -1,0 +1,57 @@
+.footer {
+  background-color: var(--dark-grey-bac);
+
+  &__containers {
+    display: flex;
+    padding: 60px 0;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  &__address {
+    margin-right: 70px;
+  }
+  &__logo {
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+  &__map {
+    display: inline-block;
+    margin-bottom: 9px;
+    font-family: "roboto";
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--white-text);
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    line-height: 1.71;
+  }
+  &__link-address {
+    display: inline-block;
+    margin-bottom: 9px;
+    font-family: "roboto";
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--grey-text-op60);
+    letter-spacing: 0.03em;
+    line-height: 1.71;
+  }
+  &__address {
+    font-style: normal;
+  }
+  &-join__title {
+    color: var(--white-text);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-family: "roboto";
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    line-height: 1.16;
+  }
+  &-join__containers {
+    width: 206px;
+  }
+}
