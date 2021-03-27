@@ -188,9 +188,8 @@ a {
 .hide {
   height: 0px;
   overflow: hidden;
-  /* -----М-о-д-а-л-к-а------- */
 }
-
+/* -----М-о-д-а-л-к-а------- */
 .backdrop {
   position: fixed;
   top: 0;

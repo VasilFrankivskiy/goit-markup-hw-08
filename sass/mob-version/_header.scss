@@ -7,36 +7,86 @@
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-}
-@media screen and (min-width: 480px) {
-  .nav {
-    max-width: 480px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .nav {
-    max-width: 768px;
-  }
+  border-bottom: solide 1px var(--border-color);
 }
 @media screen and (min-width: 1200px) {
   .nav {
     max-width: 1200px;
   }
 }
+@media screen and (min-width: 768px) {
+  .nav {
+    max-width: 768px;
+    justify-content: space-between;
+    border-bottom: solide 1px var(--border-color);
+  }
+}
+// @media screen and (min-width: 480px) {
+//   .nav {
+//     max-width: 480px;
+//   }
+// }
+
 .nav__link {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  max-width: 100%;
 }
 .nav__list {
   justify-content: space-around;
   align-items: center;
   display: flex;
 }
+@media screen and (max-width: 768px) {
+  .nav__list {
+    display: none;
+  }
+}
 .contacts {
   justify-content: space-around;
   align-items: center;
   display: flex;
+}
+@media screen and (max-width: 768px) {
+  .contacts {
+    display: none;
+  }
+  .contacts__Information:hover {
+    color: var(--blue-text);
+    transition: color 250ms var(--cubic);
+  }
+  .contacts__Information--mail-color {
+    font-family: "roboto";
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--grey-text);
+    letter-spacing: 0.02em;
+    justify-content: center;
+    align-items: center;
+  }
+  .contacts__Information {
+    display: flex;
+    font-family: "roboto";
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--grey-text);
+    letter-spacing: 0.02em;
+    justify-content: center;
+    align-items: center;
+  }
+  @media screen and (max-width: 768px) {
+    .contacts__Information {
+      font-size: 34px;
+      justify-content: left;
+      color: var(--blue-text);
+      padding-bottom: 32px;
+    }
+  }
+  .contacts__svg {
+    margin-right: 10px;
+    fill: currentColor;
+  }
 }
 .nav__logo--web {
   font-family: "Raleway";
@@ -81,12 +131,138 @@
   position: absolute;
   bottom: -1px;
 }
+@media screen and (max-width: 768px) {
+  .nav__page--active .nav__page::after {
+    content: "";
+    display: none;
+  }
+}
 .nav__page {
-  margin-left: 50px;
-  padding: 32px 0;
   font-family: "roboto";
   font-size: 14px;
   font-weight: 500;
   color: var(--black-text);
   letter-spacing: 0.02em;
+}
+@media screen and (max-width: 768px) {
+  .nav__page {
+    font-size: 40px;
+    font-weight: 500;
+  }
+}
+
+// ________________________________________________________
+
+.menu {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+@media (max-width: 767px) {
+  .menu {
+    display: none;
+  }
+}
+.mobile-menu__social {
+  display: flex;
+}
+.mobile-menu__link {
+  font-family: "roboto";
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--blue-text);
+  letter-spacing: 0.02em;
+  padding-right: 5px;
+}
+.mobile-menu__cheat {
+  color: var(--border-modal-color);
+}
+.menu .link {
+  padding: 10px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.menu .link:hover,
+.menu .link:focus {
+  text-decoration: underline;
+}
+
+.menu-toggle {
+  min-height: 40px;
+  min-width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+}
+
+@media (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
+}
+.mobile-menu__icon {
+  &:hover,
+  &:focus {
+    fill: var(--blue-text);
+  }
+}
+.closeMenu-button__icon {
+  &:hover,
+  &:focus {
+    fill: var(--blue-text);
+  }
+}
+
+.menu-toggle:hover,
+.menu-toggle:focus {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.menu-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 32px;
+  background-color: floralwhite;
+  z-index: 999;
+
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+}
+
+.menu-container.is-open {
+  transform: translateX(0);
+}
+
+.menu-container .menu-toggle {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  color: #fff;
+}
+
+.mobile-menu {
+  list-style: none;
+}
+
+.mobile-menu .link :not(last-child) {
+  display: block;
+  margin-bottom: 32px;
 }

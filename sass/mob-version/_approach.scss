@@ -1,0 +1,52 @@
+.approach__container {
+  padding: 94px 0;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.approach-card__list {
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 480px) {
+  .approach-card__list {
+    display: block;
+  }
+}
+@media screen and (max-width: 768px) {
+  .approach-card__list {
+    display: block;
+  }
+}
+.approach-card__inner {
+  padding: 25px 0 25px;
+  margin-bottom: 30px;
+  background-color: var(--buutom-bac);
+  border-radius: 4px;
+}
+.approach-card__svg {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+.approach-card__title {
+  font-family: "roboto";
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--black-text);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  line-height: 1.14;
+}
+.approach-card__text {
+  max-width: 270px;
+  font-family: "roboto";
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--grey-text);
+  letter-spacing: 0.03em;
+  line-height: 1.71;
+}

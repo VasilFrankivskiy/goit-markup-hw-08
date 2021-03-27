@@ -23,15 +23,7 @@
             <span class="nav__logo--web">Web</span>
             <span class="nav__logo--studio">Studio</span></a
           >
-
-          <button
-            class="openMenu-button page-header__openMenu-button js-open-menu"
-            aria-label="відкритя меню навігації"
-          >
-            <svg class="openMenu-button__icon" width="40" height="40">
-              <use href="./images/icons.svg#icon-menu_40px" />
-            </svg>
-          </button>
+          <!-- <div class="menu-container js-menu-container" id="mobile-menu"> -->
 
           <ul class="nav__list">
             <li>
@@ -50,26 +42,35 @@
               <a href="#contacts"> <span class="nav__page">Контакты</span></a>
             </li>
           </ul>
+
+          <ul class="contacts">
+            <li>
+              <a class="contacts__Information" href="mailto:Info@exampie.com">
+                <svg class="contacts__svg" width="16" height="12">
+                  <use href="./images/icons.svg#icon-mail"></use></svg
+                >Info@exampie.com
+              </a>
+            </li>
+
+            <li>
+              <a class="contacts__Information" href="tel:+380991111111">
+                <svg class="contacts__svg" width="10" height="16">
+                  <use href="./images/icons.svg#icon-smartphone"></use>
+                </svg>
+                +38 099 111 11 11
+              </a>
+            </li>
+          </ul>
         </nav>
-
-        <ul class="contacts">
-          <li>
-            <a class="contacts__Information" href="mailto:Info@exampie.com">
-              <svg class="contacts__svg" width="16" height="12">
-                <use href="./images/icons.svg#icon-mail"></use></svg
-              >Info@exampie.com
-            </a>
-          </li>
-
-          <li>
-            <a class="contacts__Information" href="tel:+380991111111">
-              <svg class="contacts__svg" width="10" height="16">
-                <use href="./images/icons.svg#icon-smartphone"></use>
-              </svg>
-              +38 099 111 11 11
-            </a>
-          </li>
-        </ul>
+        <button
+          type="button"
+          class="menu-toggle js-open-menu"
+          aria-label="відкритя меню навігації"
+        >
+          <svg class="mobile-menu__icon" width="40" height="40">
+            <use href="/images/icons.svg#icon-menu_40px"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <!-------------------------Кінець Шапка з навігацією----------------------------------->
@@ -690,7 +691,168 @@
       </div>
     </footer>
     <!------------------------Кінець Підвал з посиланями і адресами ------------------------->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg class="closeMenu-button__icon" width="40" height="40">
+          <use href="./images/icons.svg#icon-close_40px" />
+        </svg>
+      </button>
 
+      <ul class="mobile-menu">
+        <li class="link">
+          <a class="nav__page--active" href="./index.html">
+            <span class="nav__page">Студия</span></a
+          >
+        </li>
+
+        <li class="link">
+          <a href="./portfolio.html">
+            <span class="nav__page">Портфолио</span></a
+          >
+        </li>
+
+        <li class="link">
+          <a href="#contacts"> <span class="nav__page">Контакты</span></a>
+        </li>
+      </ul>
+      <ul class="mobile-menu">
+        <li>
+          <a class="contacts__Information" href="tel:+380991111111">
+            +38 099 111 11 11
+          </a>
+        </li>
+
+        <li>
+          <a
+            class="contacts__Information--mail-color"
+            href="mailto:Info@exampie.com"
+          >
+            Info@devstudio.com
+          </a>
+        </li>
+      </ul>
+      <div>
+        <ul class="mobile-menu__social">
+          <li>
+            <a class="mobile-menu__link" href="instagram.com"
+              >Instagram <span class="mobile-menu__cheat">|</span></a
+            >
+          </li>
+          <li>
+            <a class="mobile-menu__link" href="twitter.com"
+              >Twitter <span class="mobile-menu__cheat">|</span></a
+            >
+          </li>
+          <li>
+            <a class="mobile-menu__link" href="facebook.com"
+              >facebook <span class="mobile-menu__cheat">|</span></a
+            >
+          </li>
+          <li>
+            <a class="mobile-menu__link" href="linkedin.com">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- <div class="mobile-menu js-menu-container">
+      <button
+        class="closeMenu-button mobile-menu__closeMenu-button js-close-menu"
+        aria-label="Закрытие меню навигации"
+      >
+        <svg class="closeMenu-button__icon" width="40" height="40">
+          <use href="./images/icons.svg#icon-close_40px" />
+        </svg>
+      </button>
+      <nav class="navigation">
+        <ul class="navigation__list navigation__list--mobile-menu">
+          <li class="navigation__item navigation__item--mobile-menu">
+            <a
+              class="navigation__link navigation__link--mobile-menu navigation__link--current"
+              href="./index.html"
+              >Студия</a
+            >
+          </li>
+          <li class="navigation__item navigation__item--mobile-menu">
+            <a
+              class="navigation__link navigation__link--mobile-menu"
+              href="./portfolio.html"
+              >Портфолио</a
+            >
+          </li>
+          <li class="navigation__item navigation__item--mobile-menu">
+            <a
+              class="navigation__link navigation__link--mobile-menu"
+              href="#contacts"
+              >Контакты</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <ul class="communication communication--mobile-menu">
+        <li class="communication__item communication__item--mobile-menu">
+          <a
+            class="communication__link communication__link--mobile-menu"
+            href="tel:+380961111111"
+            >+38 096 111 11 11</a
+          >
+        </li>
+        <li class="communication__item communication__item--mobile-menu">
+          <a
+            class="communication__link communication__link--mobile-menu"
+            href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+        <li class="communication__item communication__item--mobile-menu">
+          <ul class="social-networks social-networks--mobile-menu">
+            <li
+              class="social-networks__item social-networks__item--mobile-menu"
+            >
+              <a
+                class="social-networks__link social-networks__link--mobile-menu"
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="noreferrer noopener"
+                >Instagram</a
+              >
+            </li>
+            <li
+              class="social-networks__item social-networks__item--mobile-menu"
+            >
+              <a
+                class="social-networks__link social-networks__link--mobile-menu"
+                href="https://twitter.com/"
+                target="_blank"
+                rel="noreferrer noopener"
+                >Twitter</a
+              >
+            </li>
+            <li
+              class="social-networks__item social-networks__item--mobile-menu"
+            >
+              <a
+                class="social-networks__link social-networks__link--mobile-menu"
+                href="https://www.facebook.com/"
+                target="_blank"
+                rel="noreferrer noopener"
+                >Facebook</a
+              >
+            </li>
+            <li
+              class="social-networks__item social-networks__item--mobile-menu"
+            >
+              <a
+                class="social-networks__link social-networks__link--mobile-menu"
+                href="https://www.linkedin.com/"
+                target="_blank"
+                rel="noreferrer noopener"
+                >LinkedIn</a
+              >
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div> -->
     <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>
   </body>
