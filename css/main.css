@@ -108,6 +108,13 @@ a {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .nav {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
 .nav__link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -186,6 +193,7 @@ a {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    margin-top: 270px;
   }
 }
 
@@ -267,6 +275,7 @@ a {
   font-weight: 500;
   color: var(--black-text);
   letter-spacing: 0.02em;
+  padding-top: 16px;
 }
 
 @media screen and (max-width: 768px) {
@@ -295,6 +304,8 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding-bottom: 16px;
+  margin-top: 64px;
 }
 
 .mobile-menu__link {
@@ -804,5 +815,147 @@ a {
   background-color: var(--blue-text);
   -webkit-box-shadow: none;
           box-shadow: none;
+}
+
+.approach {
+  padding: 94px 0;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.approach-card__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+  .approach-card__list {
+    display: block;
+  }
+}
+
+.approach-card__inner {
+  padding: 25px 0 25px;
+  margin-bottom: 30px;
+  background-color: var(--buutom-bac);
+  border-radius: 4px;
+}
+
+@media screen and (min-width: 768px) {
+  .approach-card__inner:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.approach-card__svg {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.approach-card__title {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "roboto";
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--black-text);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  line-height: 1.14;
+}
+
+@media screen and (max-width: 768px) {
+  .approach-card__title {
+    display: block;
+    margin-bottom: 10px;
+  }
+}
+
+.approach-card__text {
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "roboto";
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--grey-text);
+  letter-spacing: 0.03em;
+  line-height: 1.71;
+}
+
+@media screen and (max-width: 768px) {
+  .what-we-do {
+    display: none;
+  }
+}
+
+.what-we-do__container {
+  margin-bottom: 94px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.what-we-do__slogan {
+  padding-bottom: 50px;
+  text-align: center;
+  font-family: "roboto";
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--black-text);
+  letter-spacing: 0.03em;
+  line-height: 1.16;
+}
+
+.what-we-do-card__service {
+  overflow: hidden;
+  position: relative;
+}
+
+.what-we-do-card__service > .what-we-do-card__prefix {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  margin: 0;
+  width: 100%;
+  height: 70px;
+  font-family: "roboto";
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  background-color: var(--grey-prozoriy);
+  color: var(--white-text);
+}
+
+.what-we-do-card__prefix {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.what-we-do-card__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 /*# sourceMappingURL=main.css.map */

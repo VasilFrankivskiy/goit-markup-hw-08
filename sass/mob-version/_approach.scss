@@ -27,12 +27,10 @@
   background-color: var(--buutom-bac);
   border-radius: 4px;
 }
-.approach-card__inner:not(:last-child) {
-  margin-right: 30px;
-}
-@media screen and (max-width: 768px) {
-  .approach-card__inner {
-    margin-right: 0;
+
+@media screen and (min-width: 768px) {
+  .approach-card__inner:not(:last-child) {
+    margin-right: 30px;
   }
 }
 .approach-card__svg {
