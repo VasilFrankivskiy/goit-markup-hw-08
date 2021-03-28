@@ -847,7 +847,6 @@ a {
   margin-top: 30px;
   -ms-flex-preferred-size: calc((100% -120px) / 4);
       flex-basis: calc((100% -120px) / 4);
-  min-width: 270px;
 }
 
 .approach-card__inner {
