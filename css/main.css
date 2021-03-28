@@ -835,11 +835,11 @@ a {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  max-width: 450px;
 }
 
 .approach__item {
   display: block;
+  max-width: 450px;
 }
 
 .approach-card__inner {
