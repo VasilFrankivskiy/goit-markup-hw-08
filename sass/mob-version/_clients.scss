@@ -19,8 +19,15 @@
 }
 .client-card__list {
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
+}
+.client-card__item {
+  flex-basis: calc((100% - 30px) / 2);
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 30px) / 3);
+  }
 }
 
 .client-card__link {
