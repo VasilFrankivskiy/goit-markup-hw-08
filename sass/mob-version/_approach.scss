@@ -1,5 +1,4 @@
 .approach {
-  display: flex;
   padding: 94px 0;
   max-width: 1200px;
   margin-left: auto;
@@ -9,61 +8,80 @@
 }
 
 .approach-card__list {
-  background-color: brown;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-left: -30px;
-  margin-top: -30px;
-}
-.approach__item {
-  background-color: aqua;
-  flex-basis: calc((100% - 120px) / 4);
-  margin-left: 30px;
-  margin-top: 30px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 
-  // display: block;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * 30px);
+    margin-left: calc(-1 * 30px);
+  }
+}
+
+.approach__item {
+  width: 100%;
+
+  &:not(:first-child) {
+    margin-top: 30px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-top: 30px;
+    margin-left: 30px;
+    width: 354px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+  }
 }
 
 .approach-card__inner {
-  padding: 25px 0 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 30px;
+  height: 120px;
+  width: 100%;
   background-color: var(--buutom-bac);
   border-radius: 4px;
-}
+  border: none;
 
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+  }
+}
 .approach-card__svg {
   margin-left: auto;
   margin-right: auto;
   display: block;
 }
 .approach-card__title {
-  text-align: center;
-
-  margin-left: auto;
-  margin-right: auto;
-  font-family: "roboto";
-  font-size: 14px;
+  margin-top: 0;
+  margin-bottom: 10px;
   font-weight: 700;
-  color: var(--black-text);
-  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 1.143;
   letter-spacing: 0.03em;
-  line-height: 1.14;
-}
-@media screen and (max-width: 768px) {
-  .approach-card__title {
-    display: block;
-    margin-bottom: 10px;
+  text-transform: uppercase;
+
+  @media screen and (max-width: 480px) {
+    text-align: center;
   }
 }
-.approach-card__text {
-  margin-left: auto;
-  margin-right: auto;
 
-  font-family: "roboto";
-  font-size: 14px;
+.approach-card__text {
+  margin-top: 0;
+  margin-bottom: 0;
   font-weight: 400;
-  color: var(--grey-text);
+  font-size: 14px;
+  line-height: 1.714;
   letter-spacing: 0.03em;
-  line-height: 1.71;
+  color: var(--grey-text);
 }
