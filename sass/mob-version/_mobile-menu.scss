@@ -9,7 +9,7 @@
   height: 100vh;
   padding: 48px 40px;
   background-color: var(--main-bg-color);
-  transform: translateX(100%);
+  transform: translateX(200%);
   transition: transform var(--delay) var(--time-function);
   // overflow-x: scroll;
 }

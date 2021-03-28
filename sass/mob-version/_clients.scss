@@ -1,0 +1,44 @@
+.client {
+  padding: 94px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  text-align: center;
+}
+.client__title {
+  margin-bottom: 50px;
+  font-family: "roboto";
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--black-text);
+  letter-spacing: 0.03em;
+  line-height: 1.16;
+}
+.client-card__list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.client-card__link {
+  fill: var(--social-networks);
+  background-color: transparent;
+}
+.client-card__svg {
+  width: 170px;
+  height: 90px;
+  border-radius: 4px;
+  border: 2px solid currentColor;
+  color: var(--social-networks);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.client-card__svg:hover {
+  border-color: var(--blue-text);
+  fill: var(--blue-text);
+}

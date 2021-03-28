@@ -9,23 +9,26 @@
   padding-right: 15px;
   border-bottom: solide 1px var(--border-color);
 }
-@media screen and (min-width: 1200px) {
+
+@media screen and (min-width: 480px) {
   .nav {
-    max-width: 1200px;
+    max-width: 480px;
+    justify-content: space-between;
   }
 }
+
 @media screen and (min-width: 768px) {
   .nav {
     max-width: 768px;
     justify-content: space-between;
-    border-bottom: solide 1px var(--border-color);
   }
 }
-// @media screen and (min-width: 480px) {
-//   .nav {
-//     max-width: 480px;
-//   }
-// }
+@media screen and (min-width: 1200px) {
+  .nav {
+    max-width: 1200px;
+    justify-content: space-between;
+  }
+}
 
 .nav__link {
   display: flex;

@@ -11,11 +11,11 @@
   display: flex;
   justify-content: space-between;
 }
-@media screen and (max-width: 480px) {
-  .approach-card__list {
-    display: block;
-  }
-}
+// @media screen and (max-width: 480px) {
+//   .approach-card__list {
+//     display: block;
+//   }
+// }
 @media screen and (max-width: 768px) {
   .approach-card__list {
     display: block;
