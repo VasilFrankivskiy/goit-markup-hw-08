@@ -838,15 +838,15 @@ a {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-left: -10px;
-  margin-top: -10px;
+  margin-left: -30px;
+  margin-top: -30px;
 }
 
 .approach__item {
-  margin-left: 10px;
-  margin-top: 10px;
-  -ms-flex-preferred-size: calc((100% -40px) / 4);
-      flex-basis: calc((100% -40px) / 4);
+  margin-left: 30px;
+  margin-top: 30px;
+  -ms-flex-preferred-size: calc((100% -120px) / 4);
+      flex-basis: calc((100% -120px) / 4);
   min-width: 270px;
 }
 
