@@ -215,3 +215,132 @@
   text-align: center;
   padding: 30px 32px;
 }
+
+// 25234761371457824582458
+.team {
+  background-color: var(--buutom-bac);
+}
+
+.team__slogan {
+  margin-bottom: 50px;
+  text-align: center;
+  font-family: "roboto";
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--black-text);
+  letter-spacing: 0.03em;
+  line-height: 1.16;
+}
+.team__name {
+  margin-bottom: 10px;
+  font-family: "roboto";
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--black-dark-textt);
+  letter-spacing: 0.03em;
+  line-height: 1.18;
+}
+.team__text {
+  font-family: "roboto";
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--grey-text);
+  letter-spacing: 0.03em;
+  line-height: 1.18;
+}
+.team__list-svg {
+  margin-top: 16px;
+  max-width: 270px;
+  display: flex;
+
+  align-items: center;
+  justify-content: space-around;
+}
+.team__social-link {
+  color: var(--social-networks);
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  fill: var(--social-networks);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.team__svg {
+  justify-content: center;
+  align-items: center;
+  fill: currentColor;
+}
+
+.team__social-link:hover {
+  border-radius: 50%;
+  color: #ffffff;
+  background-color: var(--blue-text);
+}
+
+/* Карточки команди */
+
+.team__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: calc(-1 * var(--team-card-set-gap));
+  margin-top: calc(-1 * var(--team-card-set-gap));
+}
+.team__list > .team__item {
+  flex-basis: calc(100% / 4 - var(--card-set-gap));
+  margin-left: var(--team-card-set-gap);
+  margin-top: var(--team-card-set-gap);
+}
+
+.team__card {
+  margin-bottom: 94px;
+  box-shadow: var(--team-card-shadow);
+  border-radius: 0px 0px 4px 4px;
+  overflow: hidden;
+  background-color: var(--white-text);
+}
+.team__item {
+  margin-left: auto;
+  margin-right: auto;
+}
+.team__card-tumb {
+  object-fit: cover;
+  max-width: 450px;
+  max-height: 460px;
+  position: relative;
+}
+
+@media (min-width: 480px) {
+  .team__card-tumb {
+    height: 460px;
+    width: 450px;
+  }
+}
+
+@media (min-width: 768px) {
+  .team__card-tumb {
+    height: 374px;
+    width: 354px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .team__card-tumb {
+    height: 260px;
+    width: 270px;
+  }
+}
+.team__photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.team__card-content {
+  text-align: center;
+  padding: 30px 32px;
+}
