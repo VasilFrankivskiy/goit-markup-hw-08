@@ -10,17 +10,24 @@
 .approach-card__list {
   display: flex;
   justify-content: space-between;
+
+  flex-wrap: wrap;
+  max-width: 450px;
+}
+.approach__item {
+  display: block;
 }
 // @media screen and (max-width: 480px) {
 //   .approach-card__list {
 //     display: block;
 //   }
 // }
-@media screen and (max-width: 768px) {
-  .approach-card__list {
-    display: block;
-  }
-}
+// @media screen and (max-width: 768px) {
+//   .approach-card__list {
+//     // display: block;
+
+//   }
+// }
 .approach-card__inner {
   padding: 25px 0 25px;
   margin-bottom: 30px;

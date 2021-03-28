@@ -833,12 +833,13 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 450px;
 }
 
-@media screen and (max-width: 768px) {
-  .approach-card__list {
-    display: block;
-  }
+.approach__item {
+  display: block;
 }
 
 .approach-card__inner {
