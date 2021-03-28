@@ -79,19 +79,20 @@
 
 .hero__container {
   justify-content: center;
+  align-items: center;
   padding: 200px 0;
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+  max-width: 100%;
 }
 
 @media screen and (max-width: 480px) {
   .hero__container {
     padding: 118px 0;
-
-    height: 100%;
+    height: 400px;
   }
 }
 @media screen and (min-width: 480px) {
@@ -104,6 +105,11 @@
   .hero__container {
     // width: 768px;
     padding: 200px 0;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .hero__container {
+    height: 400px;
   }
 }
 
