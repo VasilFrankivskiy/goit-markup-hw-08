@@ -818,6 +818,9 @@ a {
 }
 
 .approach {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   padding: 94px 0;
   max-width: 1200px;
   margin-left: auto;
@@ -835,11 +838,16 @@ a {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin-left: -10px;
+  margin-top: -10px;
 }
 
 .approach__item {
-  display: block;
-  max-width: 450px;
+  margin-left: 10px;
+  margin-top: 10px;
+  -ms-flex-preferred-size: calc((100% -40px) / 4);
+      flex-basis: calc((100% -40px) / 4);
+  min-width: 270px;
 }
 
 .approach-card__inner {
@@ -847,12 +855,6 @@ a {
   margin-bottom: 30px;
   background-color: var(--buutom-bac);
   border-radius: 4px;
-}
-
-@media screen and (min-width: 768px) {
-  .approach-card__inner:not(:last-child) {
-    margin-right: 30px;
-  }
 }
 
 .approach-card__svg {

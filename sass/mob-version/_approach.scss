@@ -1,4 +1,5 @@
 .approach {
+  display: flex;
   padding: 94px 0;
   max-width: 1200px;
   margin-left: auto;
@@ -10,24 +11,18 @@
 .approach-card__list {
   display: flex;
   justify-content: space-between;
-
   flex-wrap: wrap;
+  margin-left: -10px;
+  margin-top: -10px;
 }
 .approach__item {
-  display: block;
-  max-width: 450px;
+  margin-left: 10px;
+  margin-top: 10px;
+  // display: block;
+  flex-basis: calc((100% -40px) / 4);
+  min-width: 270px;
 }
-// @media screen and (max-width: 480px) {
-//   .approach-card__list {
-//     display: block;
-//   }
-// }
-// @media screen and (max-width: 768px) {
-//   .approach-card__list {
-//     // display: block;
 
-//   }
-// }
 .approach-card__inner {
   padding: 25px 0 25px;
   margin-bottom: 30px;
@@ -35,11 +30,6 @@
   border-radius: 4px;
 }
 
-@media screen and (min-width: 768px) {
-  .approach-card__inner:not(:last-child) {
-    margin-right: 30px;
-  }
-}
 .approach-card__svg {
   margin-left: auto;
   margin-right: auto;
