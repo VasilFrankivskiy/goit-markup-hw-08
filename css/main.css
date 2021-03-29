@@ -257,6 +257,15 @@ li {
   border-radius: 2px;
   position: absolute;
   bottom: -1px;
+  -webkit-transform: translateY(33px);
+          transform: translateY(33px);
+}
+
+@media screen and (max-width: 1199px) {
+  .nav__page--active .nav__page::after {
+    -webkit-transform: translateY(22px);
+            transform: translateY(22px);
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -1636,7 +1645,7 @@ li {
   margin-right: auto;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 480px) {
   .footer-join__containers {
     margin-top: 60px;
   }
@@ -1663,7 +1672,7 @@ li {
 }
 
 .subscription__imput {
-  width: 348px;
+  width: 100%;
   margin-top: 20px;
   border-radius: 4px;
   border: 1px solid rgba(255, 255, 255, 0.3);
