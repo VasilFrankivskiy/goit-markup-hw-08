@@ -8,10 +8,8 @@
   padding-left: 15px;
   padding-right: 15px;
   border-bottom: solide 1px var(--border-color);
-
   max-width: 1200px;
 }
-
 .nav__link {
   display: flex;
   margin-right: auto;
@@ -42,7 +40,6 @@
 //     display: none;
 //   }
 // }
-
 .contacts__Information:hover {
   color: var(--blue-text);
   transition: color 250ms var(--cubic);
@@ -65,7 +62,6 @@
   letter-spacing: 0.02em;
   justify-content: center;
   align-items: center;
-  margin-top: 270px;
 }
 @media screen and (max-width: 1199px) {
   .contacts__Information {
@@ -79,7 +75,6 @@
   margin-right: 10px;
   fill: currentColor;
 }
-
 .nav__logo--web {
   font-family: "Raleway";
   font-style: normal;
@@ -94,7 +89,6 @@
     margin: 32px 0 0 0;
   }
 }
-
 .nav__logo--studio {
   padding-right: 43px;
   font-family: "Raleway";
