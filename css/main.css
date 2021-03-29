@@ -257,8 +257,8 @@ li {
   border-radius: 2px;
   position: absolute;
   bottom: -1px;
-  -webkit-transform: rotateX(20px);
-          transform: rotateX(20px);
+  -webkit-transform: translateY(33px);
+          transform: translateY(33px);
 }
 
 @media screen and (max-width: 768px) {
