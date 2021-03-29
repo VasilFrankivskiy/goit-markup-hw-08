@@ -66,21 +66,25 @@
   margin-left: auto;
   margin-right: auto;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 440px) {
   .footer-join__containers {
     margin-top: 60px;
   }
 }
 /* ---------Подписка---------- */
 .subscription {
+  // display: flex;
   margin-left: auto;
   margin-right: auto;
+  justify-content: center;
+  text-align: center;
 }
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 844px) {
   .subscription {
     margin-top: 60px;
   }
 }
+
 .subscription__title {
   color: #ffffff;
   font-family: "roboto";
@@ -90,7 +94,7 @@
 }
 
 .subscription__imput {
-  width: 100%;
+  max-width: 100%;
   margin-top: 20px;
   border-radius: 4px;
   border: 1px solid rgba(255, 255, 255, 0.3);
