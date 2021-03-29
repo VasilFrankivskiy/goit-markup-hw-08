@@ -3,18 +3,20 @@
 }
 .footer__containers {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   padding: 60px 0;
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  @media screen and (max-width: 1200px) {
-    flex-direction: column;
+  @media screen and (min-width: 1200px) {
+    display: flex;
   }
 }
 .footer__address {
-  margin-right: 70px;
+  // margin-right: 70px;
 }
 .footer__logo {
   display: block;
@@ -61,6 +63,11 @@
 .subscription {
   margin-left: 50px;
 }
+@media screen and (max-width: 1200px) {
+  .subscription {
+    margin-top: 60px;
+  }
+}
 .subscription__title {
   color: #ffffff;
   font-family: "roboto";
@@ -68,6 +75,7 @@
   font-weight: 700;
   text-transform: uppercase;
 }
+
 .subscription__imput {
   width: 348px;
   margin-top: 20px;

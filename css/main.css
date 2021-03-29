@@ -1246,6 +1246,11 @@ a:visited {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 60px 0;
   max-width: 1200px;
   margin-left: auto;
@@ -1254,17 +1259,12 @@ a:visited {
   padding-right: 15px;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .footer__containers {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
-}
-
-.footer__address {
-  margin-right: 70px;
 }
 
 .footer__logo {
@@ -1317,6 +1317,12 @@ a:visited {
 /* ---------Подписка---------- */
 .subscription {
   margin-left: 50px;
+}
+
+@media screen and (max-width: 1200px) {
+  .subscription {
+    margin-top: 60px;
+  }
 }
 
 .subscription__title {
