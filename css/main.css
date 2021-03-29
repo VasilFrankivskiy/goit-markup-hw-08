@@ -257,15 +257,6 @@ li {
   border-radius: 2px;
   position: absolute;
   bottom: -1px;
-  -webkit-transform: translateY(33px);
-          transform: translateY(33px);
-}
-
-@media screen and (max-width: 1199px) {
-  .nav__page--active .nav__page::after {
-    -webkit-transform: translateY(22px);
-            transform: translateY(22px);
-  }
 }
 
 @media screen and (max-width: 768px) {
@@ -1024,6 +1015,9 @@ li {
 
 .team__container {
   padding: 94px 15px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
 }
 
 .team__slogan {
