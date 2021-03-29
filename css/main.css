@@ -169,20 +169,6 @@ a:visited {
             align-items: center;
     margin-top: 270px;
   }
-}
-
-@media screen and (max-width: 768px) and (max-width: 1200px) {
-  .contacts__Information {
-    font-size: 34px;
-    -webkit-box-pack: left;
-        -ms-flex-pack: left;
-            justify-content: left;
-    color: var(--blue-text);
-    padding-bottom: 32px;
-  }
-}
-
-@media screen and (max-width: 768px) {
   .contacts__svg {
     margin-right: 10px;
     fill: currentColor;
