@@ -261,6 +261,13 @@ li {
           transform: translateY(33px);
 }
 
+@media screen and (max-width: 1199px) {
+  .nav__page--active .nav__page::after {
+    -webkit-transform: translateY(22px);
+            transform: translateY(22px);
+  }
+}
+
 @media screen and (max-width: 768px) {
   .nav__page--active .nav__page::after {
     content: "";

@@ -134,6 +134,12 @@
   bottom: -1px;
   transform: translateY(33px);
 }
+@media screen and (max-width: 1199px) {
+  .nav__page--active .nav__page::after {
+    transform: translateY(22px);
+  }
+}
+
 @media screen and (max-width: 768px) {
   .nav__page--active .nav__page::after {
     content: "";
