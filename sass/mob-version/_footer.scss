@@ -13,6 +13,7 @@
   padding-right: 15px;
   @media screen and (min-width: 1200px) {
     display: flex;
+    align-items: center;
   }
 }
 .footer__address {
@@ -58,6 +59,11 @@
 }
 .footer-join__containers {
   width: 206px;
+}
+@media screen and (max-width: 1200px) {
+  .footer-join__containers {
+    margin-top: 60px;
+  }
 }
 /* ---------Подписка---------- */
 .subscription {

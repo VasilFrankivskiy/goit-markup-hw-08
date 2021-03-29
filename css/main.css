@@ -1264,6 +1264,9 @@ a:visited {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -1312,6 +1315,12 @@ a:visited {
 
 .footer-join__containers {
   width: 206px;
+}
+
+@media screen and (max-width: 1200px) {
+  .footer-join__containers {
+    margin-top: 60px;
+  }
 }
 
 /* ---------Подписка---------- */
