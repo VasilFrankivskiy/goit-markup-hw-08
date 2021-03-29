@@ -11,7 +11,7 @@
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1199px) {
     display: flex;
 
     // padding-right: 89px;
@@ -66,7 +66,7 @@
   margin-left: auto;
   margin-right: auto;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1199px) {
   .footer-join__containers {
     margin-top: 60px;
   }
@@ -76,7 +76,7 @@
   margin-left: auto;
   margin-right: auto;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1199px) {
   .subscription {
     margin-top: 60px;
   }
