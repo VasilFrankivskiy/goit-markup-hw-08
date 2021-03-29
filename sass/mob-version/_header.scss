@@ -8,39 +8,17 @@
   padding-left: 15px;
   padding-right: 15px;
   border-bottom: solide 1px var(--border-color);
-}
 
-@media screen and (min-width: 480px) {
-  .nav {
-    max-width: 480px;
-    justify-content: space-between;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .nav {
-    max-width: 768px;
-    justify-content: space-between;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .nav {
-    max-width: 1200px;
-    justify-content: space-between;
-  }
-}
-@media screen and (max-width: 768px) {
-  .nav {
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
+  max-width: 1200px;
 }
 
 .nav__link {
   display: flex;
-  align-items: center;
+  margin-right: auto;
+  margin-left: auto;
   justify-content: space-between;
-  max-width: 100%;
+  align-items: center;
+  width: 100%;
 }
 .nav__list {
   justify-content: space-around;
@@ -55,6 +33,7 @@
 .contacts {
   justify-content: space-around;
   align-items: center;
+
   display: flex;
 }
 @media screen and (max-width: 768px) {
@@ -107,7 +86,10 @@
   letter-spacing: 0.03;
   line-height: 1.15;
 }
-@media screen and (max-width: 768px) {
+@media (min-width: 768px) {
+  .nav__logo--web {
+    margin: 32px 0 0 0;
+  }
 }
 
 .nav__logo--studio {
@@ -155,12 +137,17 @@
   font-weight: 500;
   color: var(--black-text);
   letter-spacing: 0.02em;
-  padding-top: 16px;
+  // padding-top: 16px;
 }
 @media screen and (max-width: 768px) {
   .nav__page {
     font-size: 40px;
     font-weight: 500;
+  }
+}
+@media (min-width: 768px) {
+  .nav__page {
+    margin: 32px 50px 32px 0;
   }
 }
 
