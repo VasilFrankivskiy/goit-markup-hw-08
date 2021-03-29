@@ -35,11 +35,17 @@
 
   display: flex;
 }
-// @media screen and (max-width: 768px) {
-//   .contacts {
-//     display: none;
-//   }
-// }
+@media screen and (max-width: 1199px) {
+  .contacts {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 767px) {
+  .contacts {
+    display: none;
+  }
+}
 .contacts__Information:hover {
   color: var(--blue-text);
   transition: color 250ms var(--cubic);
@@ -64,14 +70,14 @@
   align-items: center;
   margin-left: 30px;
 }
-@media screen and (max-width: 1199px) {
-  .contacts__Information {
-    font-size: 34px;
-    justify-content: left;
-    color: var(--blue-text);
-    padding-bottom: 32px;
-  }
-}
+// @media screen and (min-width: 1199px) {
+//   .contacts__Information {
+//     font-size: 34px;
+//     justify-content: left;
+//     color: var(--blue-text);
+//     padding-bottom: 32px;
+//   }
+// }
 .contacts__svg {
   margin-right: 10px;
   fill: currentColor;
