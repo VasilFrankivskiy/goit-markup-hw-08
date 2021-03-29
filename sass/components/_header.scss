@@ -71,14 +71,14 @@
   align-items: center;
   margin-left: 30px;
 }
-// @media screen and (min-width: 1199px) {
-//   .contacts__Information {
-//     font-size: 34px;
-//     justify-content: left;
-//     color: var(--blue-text);
-//     padding-bottom: 32px;
-//   }
-// }
+@media screen and (max-width: 767px) {
+  .contacts__Information {
+    font-size: 34px;
+    justify-content: left;
+    color: var(--blue-text);
+    padding-bottom: 32px;
+  }
+}
 .contacts__svg {
   margin-right: 10px;
   fill: currentColor;
