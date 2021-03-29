@@ -84,7 +84,7 @@ li {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  border-bottom: solide 1px var(--border-color);
+  border-bottom: solid 1px var(--border-color);
   max-width: 1200px;
 }
 
@@ -257,6 +257,8 @@ li {
   border-radius: 2px;
   position: absolute;
   bottom: -1px;
+  -webkit-transform: rotateX(20px);
+          transform: rotateX(20px);
 }
 
 @media screen and (max-width: 768px) {

@@ -7,7 +7,7 @@
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  border-bottom: solide 1px var(--border-color);
+  border-bottom: solid 1px var(--border-color);
   max-width: 1200px;
 }
 .nav__link {
@@ -132,6 +132,7 @@
   border-radius: 2px;
   position: absolute;
   bottom: -1px;
+  transform: rotateX(20px);
 }
 @media screen and (max-width: 768px) {
   .nav__page--active .nav__page::after {
