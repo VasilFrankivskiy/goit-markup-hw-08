@@ -48,6 +48,8 @@
 }
 .footer__address {
   font-style: normal;
+  margin-left: auto;
+  margin-right: auto;
 }
 .footer-join__title {
   color: var(--white-text);
@@ -61,6 +63,8 @@
 }
 .footer-join__containers {
   width: 206px;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media screen and (max-width: 1200px) {
   .footer-join__containers {
@@ -69,7 +73,8 @@
 }
 /* ---------Подписка---------- */
 .subscription {
-  // margin-left: 50px;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media screen and (max-width: 1200px) {
   .subscription {

@@ -97,9 +97,10 @@
 }
 .team__card-tumb {
   object-fit: cover;
-  max-width: 450px;
-  max-height: 460px;
+
   position: relative;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media (min-width: 480px) {
